@@ -1,5 +1,7 @@
 package LC1;
 
+import java.util.Arrays;
+
 /**
  * 1.两数之和
  *
@@ -38,5 +40,10 @@ public class Solution {
             }
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = new int[]{1,2,5,7,8};
+        Arrays.stream(new Solution().twoSum(arr, 6)).forEach(value -> System.out.print(value+" "));
     }
 }
